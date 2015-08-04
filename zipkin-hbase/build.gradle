@@ -1,0 +1,21 @@
+repositories {
+    maven { url "https://repository.cloudera.com/content/groups/cdh-releases-rcs/" }
+}
+
+dependencies {
+    compile project(':zipkin-scrooge')
+
+    compile "org.apache.hadoop:hadoop-common:2.5.0-cdh5.3.1"
+    compile "com.google.protobuf:protobuf-java:2.4.1"
+    compile "commons-logging:commons-logging:1.1.1"
+    compile "commons-configuration:commons-configuration:1.6"
+    compile "org.apache.hbase:hbase:0.98.6-cdh5.3.1"
+    compile "org.apache.hbase:hbase-common:0.98.6-cdh5.3.1"
+    compile "org.apache.hbase:hbase-client:0.98.6-cdh5.3.1"
+
+    compile "com.twitter:scrooge-serializer_${scalaInterfaceVersion}:${commonVersions.scrooge}"
+    compile "com.twitter:util-logging_${scalaInterfaceVersion}:${commonVersions.twitterUtil}"
+
+    runtime "org.apache.zookeeper:zookeeper:3.4.6"
+    runtime commonDependencies.slf4jLog4j12
+}
