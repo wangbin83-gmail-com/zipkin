@@ -48,6 +48,7 @@ include 'zipkin-common',
 'zipkin-cassandra',
 'zipkin-anormdb',
 'zipkin-redis',
+'zipkin-hbase',
 
 ////////////
 // Thrift //

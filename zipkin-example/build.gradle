@@ -18,6 +18,9 @@ repositories {
     // For dependencies of zipkin-cassandra
     // via zipkin-tracegen -> (zipkin-query-service, zipkin-collector-service)
     maven { url 'http://conjars.org/repo' }
+    // For zipkin-hbase
+    // via zipkin-tracegen -> (zipkin-query-service, zipkin-collector-service)
+    maven { url 'https://repository.cloudera.com/content/groups/cdh-releases-rcs/' }
 }
 
 dependencies {

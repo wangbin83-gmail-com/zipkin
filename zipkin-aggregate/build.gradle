@@ -21,6 +21,7 @@ tasks.build.dependsOn(shadowJar)
 repositories {
     // For dependencies of zipkin-cassandra
     maven { url 'http://conjars.org/repo' }
+    maven { url "https://repository.cloudera.com/content/groups/cdh-releases-rcs/" }
 }
 
 dependencies {
